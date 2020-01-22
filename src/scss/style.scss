@@ -1,0 +1,11 @@
+@import 'reset';
+@import 'bootstrap';
+
+body, html{
+	color:#000;
+	line-height: 1.2;
+	font-size: 14px;
+	background: #fff;
+}
+
+@import 'form';

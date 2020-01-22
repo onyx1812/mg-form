@@ -1,0 +1,79 @@
+<!-- include header -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Meta -->
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="format-detection" content="telephone=no">
+		<meta content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+		<meta name="author" content="ONYX1812">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="robots" content="nofollow">
+
+		<title>Page title</title>
+
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+<div class="container">
+	<h1>Valid form</h1>
+	<div class="row">
+		<div class="col-md-8">
+			<form id="form" class="row">
+				<p class="col-12 col-md-6">
+					<label for="first_name">First name:</label>
+					<input type="text" name="first_name" id="first_name" minlength="1" maxlength="300" placeholder="First name" required>
+				</p>
+				<p class="col-12 col-md-6">
+					<label for="last_name">First name:</label>
+					<input type="text" name="last_name" id="last_name" minlength="1" maxlength="300" placeholder="Last name" required>
+				</p>
+				<p class="col-12 col-md-6">
+					<label for="email">Email validation:</label>
+					<input type="email" name="email" id="email" minlength="6" maxlength="320" placeholder="ex.example@gmail.com" required>
+				</p>
+				<p class="col-12 col-md-6">
+					<label for="phone">Phone mask:</label>
+					<input type="tel" name="phone" id="phone" minlength="14" maxlength="14" placeholder="(000) 000-0000" data-mask="true" required>
+				</p>
+				<p class="col-12">
+					<label for="f_zip">Postal code mask:</label>
+					<input type="tel" name="zip" id="f_zip" minlength="5" maxlength="5" placeholder="00000" required>
+				</p>
+				<p class="col-12">
+					<label for="f_address">Address autocomplete:</label>
+					<input type="tel" name="address" id="f_address" minlength="10" maxlength="320" placeholder="1600 Pennsylvania Ave NW, Washington, DC 20500, US" required>
+				</p>
+				<p class="col-12 col-lg-6">
+					<label for="card_number">Card number mask:</label>
+					<input type="tel" name="card_number" id="card_number" minlength="19" maxlength="19" placeholder="0000 0000 0000 0000" required>
+				</p>
+				<p class="col-6 col-lg-3">
+					<label for="expiry_date">Expiry date:</label>
+					<input type="text" name="expiry_date" id="expiry_date" placeholder="10 / 25" minlength="7" maxlength="7" required>
+				</p>
+				<p class="col-6 col-lg-3">
+					<label for="card_code">Card code(cvc):</label>
+					<input type="text" inputmode="numeric" name="card_code" id="card_code" placeholder="123" minlength="3" maxlength="4" required>
+				</p>
+				<p class="col-12">
+					<input type="submit">
+				</p>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<div id="result" class="result"></div>
+		</div>
+	</div>
+</div>
+
+<!-- include footer -->
+		<script src="js/scripts.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_3G7bVKWyBsc1RnJzogpyTphIidIZZVw&libraries=places&callback=initAutocomplete"></script>
+	</body>
+</html>
